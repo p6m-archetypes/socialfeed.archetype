@@ -1,0 +1,10 @@
+# configmap
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: socialfeed-cmap-dev-{{ org-name }}-{{ venture-name }}
+data:
+  PAGE_SIZE: "100"
+  MAX_RETRIES: "20"
+  BUCKET_LOCATION: "data-dev-{{ region-name }}-{{ org-name }}-{{ venture-name }}"
+
