@@ -3,7 +3,7 @@ import boto3
 import logging
 import pandas as pd
 import awswrangler as wr
-from twitter_{{ org_name }}_{{ venture_name }}.twitter.source import TwitterSource
+from twitter_{{ org_name }}_{{ solution_name }}.twitter.source import TwitterSource
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -156,7 +156,7 @@ class Driver:
                 "topic_name": args["topic_name"],
                 "vendor_name": "socialfeed",
                 "source_format": args["source_format"],
-                "venture_name": args["venture_name"],
+                "solution_name": args["solution_name"],
             }
     
             logger.info(f'output = {data}')

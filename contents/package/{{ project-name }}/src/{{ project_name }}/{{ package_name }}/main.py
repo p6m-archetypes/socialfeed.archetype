@@ -1,7 +1,7 @@
 import sys
 import logging
 from .driver import Driver
-from driver_library_{{ org_name }}_{{ venture_name }}.driver_library.utils.core.environment import CheckEnvironment
+from driver_library_{{ org_name }}_{{ solution_name }}.driver_library.utils.core.environment import CheckEnvironment
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
@@ -11,7 +11,7 @@ class Constants:
     # per job parameters
     docker_variables = ["talkwalker_output", "output_template", "xcom_template", "query_hash", "project_id", "topic_id",
                         "from_date", "to_date", "project_name", "topic_name", "vendor_name", "source_format",
-                        "venture_name"]
+                        "solution_name"]
 
     # cloud parameters (from kubernetes secrets)
     secret_variables = ["TWITTER_TOKEN"]
