@@ -41,6 +41,8 @@ on:
         required: true
         type: string
 
+permissions: write-all
+
 env:
   ARTIFACTORY_USERNAME: ${{'{'}}{ secrets.ARTIFACTORY_USERNAME }}
   ARTIFACTORY_IDENTITY_TOKEN: ${{'{'}}{ secrets.ARTIFACTORY_IDENTITY_TOKEN }}
